@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "Vscode_dark",
+  theme = "Catppuccin",
 }
 
 M.nvdash = { load_on_startup = false }
