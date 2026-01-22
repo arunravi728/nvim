@@ -203,7 +203,9 @@ return {
       local servers = {
         clangd = {},
         pyright = {},
-        rust_analyzer = {},
+        rust_analyzer = { diagnostics = {
+          disabled = { "inactive-code" },
+        } },
         intelephense = {},
 
         lua_ls = {
