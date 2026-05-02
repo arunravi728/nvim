@@ -51,3 +51,6 @@ vim.o.scrolloff = 10
 -- instead raise a dialog asking if you wish to save the current file(s)
 vim.o.confirm = true
 
+-- Don't show command line when inactive
+vim.opt.cmdheight = 0
+
