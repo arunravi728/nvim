@@ -1,5 +1,3 @@
--- [[ Configure and install plugins ]]
---
 --  To check the current status of your plugins, run
 --    :Lazy
 --
@@ -7,9 +5,7 @@
 --    :Lazy update
 --
 require('lazy').setup({
-  -- NOTE: Plugins can be added via a link or github org/name. To run setup automatically, use `opts = {}`
-  { 'NMAC427/guess-indent.nvim', opts = {} },
-
+  require 'plugins/guess-indent',
   require 'plugins/gitsigns',
   require 'plugins/which-key',
   require 'plugins/autopairs',
