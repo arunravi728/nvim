@@ -13,12 +13,26 @@ return {
       { 'nvim-telescope/telescope-ui-select.nvim' },
       { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
     },
+
     config = function()
       require('telescope').setup {
         extensions = {
           ['ui-select'] = { require('telescope.themes').get_dropdown() },
         },
+
+        defaults = {
+          layout_config = {
+            vertical = { width = 0.3 },
+            preview_width = 0.65,
+          },
+          prompt_prefix = " ",
+          selection_caret = " ",
+          path_display = { "smart" },
+        }
       }
+
+      -- Disable the transparent selection bar
+      vim.api.nvim_set_hl(0, "TelescopeSelection", { bg = "none", bold = true })
 
       -- Enable Telescope extensions if they are installed
       pcall(require('telescope').load_extension, 'fzf')
@@ -71,29 +85,20 @@ return {
         end,
       })
 
-      -- Override default behavior and theme when searching
-      vim.keymap.set('n', '<leader>/', function()
-        -- You can pass additional configuration to Telescope to change the theme, layout, etc.
-        builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
-          winblend = 10,
-          previewer = false,
-        })
-      end, { desc = '[/] Fuzzily search in current buffer' })
-
       vim.keymap.set(
         'n',
-        '<leader>s/',
+        '<leader>/',
         function()
           builtin.live_grep {
             grep_open_files = true,
             prompt_title = 'Live Grep in Open Files',
           }
         end,
-        { desc = '[S]earch [/] in Open Files' }
+        { desc = '[F]ind [/] in Open Files' }
       )
 
       -- Shortcut for searching your Neovim configuration files
-      vim.keymap.set('n', '<leader>sn', function() builtin.find_files { cwd = vim.fn.stdpath 'config' } end, { desc = '[S]earch [N]eovim files' })
+      vim.keymap.set('n', '<leader>fn', function() builtin.find_files { cwd = vim.fn.stdpath 'config' } end, { desc = '[F]ind [N]eovim files' })
     end,
   },
 }
