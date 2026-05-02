@@ -5,6 +5,7 @@
 --    :Lazy update
 --
 require('lazy').setup({
+  require 'plugins/one-dark',
   require 'plugins/guess-indent',
   require 'plugins/gitsigns',
   require 'plugins/which-key',
