@@ -11,6 +11,7 @@ require('lazy').setup({
   { 'NMAC427/guess-indent.nvim', opts = {} },
 
   require 'plugins/gitsigns',
+  require 'plugins/which-key',
   require 'plugins/autopairs',
   require 'plugins/telescope',
   require 'plugins/todo-comments',
