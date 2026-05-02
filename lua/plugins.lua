@@ -14,6 +14,7 @@ require('lazy').setup({
   require 'plugins/telescope',
   require 'plugins/todo-comments',
   require 'plugins/mini',
+  require 'plugins/indent',
 
   -- modular approach: using `require 'path.name'` will
   -- include a plugin definition from file lua/path/name.lua
