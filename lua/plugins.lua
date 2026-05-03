@@ -15,6 +15,7 @@ require("lazy").setup({
 	require("plugins/lspconfig"),
 	require("plugins/conform"),
 	require("plugins/blink"),
+	require("plugins/treesitter"),
 	require("plugins/mini"),
 	require("plugins/indent"),
 	require("plugins/bufferline"),
