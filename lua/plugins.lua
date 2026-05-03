@@ -12,6 +12,7 @@ require('lazy').setup({
   require 'plugins/which-key',
   require 'plugins/autopairs',
   require 'plugins/telescope',
+  require 'plugins/lspconfig',
   require 'plugins/mini',
   require 'plugins/indent',
 
