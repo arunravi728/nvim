@@ -12,9 +12,10 @@ require('lazy').setup({
   require 'plugins/which-key',
   require 'plugins/autopairs',
   require 'plugins/telescope',
-  require 'plugins/todo-comments',
   require 'plugins/mini',
   require 'plugins/indent',
+
+  -- require 'plugins/todo-comments',
 
   -- modular approach: using `require 'path.name'` will
   -- include a plugin definition from file lua/path/name.lua
