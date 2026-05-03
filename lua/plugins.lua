@@ -13,6 +13,7 @@ require('lazy').setup({
   require 'plugins/autopairs',
   require 'plugins/telescope',
   require 'plugins/lspconfig',
+  require 'plugins/conform',
   require 'plugins/mini',
   require 'plugins/indent',
 
