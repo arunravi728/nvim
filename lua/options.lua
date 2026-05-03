@@ -5,6 +5,12 @@ vim.o.relativenumber = true
 -- Enable mouse mode
 vim.o.mouse = "a"
 
+-- Configure tab characteristics
+vim.opt.tabstop = 2 -- Number of spaces that a <Tab> in the file counts for
+vim.opt.softtabstop = 2 -- Number of spaces that a <Tab> counts for while performing editing operations
+vim.opt.shiftwidth = 2 -- Number of spaces to use for each step of (auto)indent
+vim.opt.expandtab = true -- Use spaces instead of tabs
+
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false
 
