@@ -19,6 +19,7 @@ require("lazy").setup({
 	require("plugins/mini"),
 	require("plugins/indent"),
 	require("plugins/bufferline"),
+	require("plugins/diff"),
 
 	-- require 'plugins/todo-comments',
 
