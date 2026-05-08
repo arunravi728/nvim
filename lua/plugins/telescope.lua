@@ -24,7 +24,7 @@ return {
 
 				defaults = {
 					layout_config = {
-						vertical = { width = 0.3 },
+						vertical = { width = 0.5 },
 						preview_width = 0.65,
 					},
 					prompt_prefix = " ",
