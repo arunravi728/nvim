@@ -107,12 +107,12 @@ return {
 				end,
 			})
 
-			vim.keymap.set("n", "<leader>/", function()
+			vim.keymap.set("n", "<leader>ff", function()
 				builtin.live_grep({
 					grep_open_files = true,
 					prompt_title = "Live Grep in Open Files",
 				})
-			end, { desc = "[F]ind [/] in Open Files" })
+			end, { desc = "[F]ind in Open [F]iles" })
 
 			-- Shortcut for searching your Neovim configuration files
 			vim.keymap.set("n", "<leader>fn", function()
