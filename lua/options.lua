@@ -61,3 +61,7 @@ vim.o.confirm = true
 
 -- Don't show command line when inactive
 vim.opt.cmdheight = 0
+
+-- Enable native vim spell checks
+vim.opt.spell = true
+vim.opt.spelllang = { "en_us" } -- Or other languages like 'de', 'es'
