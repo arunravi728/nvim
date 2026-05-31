@@ -21,6 +21,7 @@ require("lazy").setup({
 	require("plugins/indent"),
 	require("plugins/bufferline"),
 	require("plugins/diff"),
+	require("plugins/markview"),
 
 	-- require 'plugins/todo-comments',
 
