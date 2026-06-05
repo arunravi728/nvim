@@ -11,6 +11,9 @@ vim.opt.softtabstop = 2 -- Number of spaces that a <Tab> counts for while perfor
 vim.opt.shiftwidth = 2 -- Number of spaces to use for each step of (auto)indent
 vim.opt.expandtab = true -- Use spaces instead of tabs
 
+-- Do not show tab line
+vim.opt.showtabline = 0
+
 -- Don't show the mode, since it's already in the status line
 vim.o.showmode = false
 
