@@ -156,3 +156,12 @@ TMUX
 tmux
 conf
 statusbar
+nvim
+fcd
+fzf
+zshrc
+bashrc
+args
+subdirectories
+usr
+cd

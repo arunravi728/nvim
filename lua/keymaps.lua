@@ -25,6 +25,7 @@ vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" }
 
 -- Toggle comment on current line or selection
 vim.keymap.set({ "n", "v" }, "<C-/>", "gcc", { remap = true })
+vim.keymap.set({ "n", "v" }, "<C-_>", "gcc", { remap = true })
 
 -- Disable arrow keys in normal mode
 vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
